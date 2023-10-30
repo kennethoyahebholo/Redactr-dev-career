@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Kalam:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303030;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.container {
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  height: 100%;
+  padding: 30px 12px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+  color: #303030;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  text-align: center;
+  text-transform: lowercase;
+  color: rgb(31, 31, 146);
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_label {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.form_input {
+  border: 1px solid rgb(26, 26, 109);
+  border-radius: 4px;
+  height: 45px;
+  padding: 10px;
+}
+
+.form_input_textarea {
+  border: 1px solid rgb(26, 26, 109);
+  border-radius: 4px;
+  height: 45px;
+  padding: 10px;
+}
+
+.redactContent {
+  width: 100%;
+}
+
+.redactedTitle {
+  text-align: left;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  color: #303030;
+}
+
+.redactButton {
+  background: rgb(31, 31, 146);
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  border: none;
+}
+
+.redactButton:hover {
+  background-color: rgb(23, 23, 104);
+  color: rgb(204, 204, 204);
+  transition: all 0.8s;
+}
+
+.resetButton {
+  background: rgb(204, 204, 204);
+  cursor: pointer;
+  border-radius: 6px;
+  color: rgb(15, 15, 74);
+  font-size: 15px;
+  height: 40px;
+  border: none;
+}
+
+.resetButton:hover {
+  background-color: rgb(118, 118, 120);
+  color: rgb(204, 204, 204);
+  transition: all 0.8s;
+}
+
+#stats {
+  font-family: "Barlow Condensed", sans-serif;
+  color: rgb(17, 17, 90);
+}
+
+.counts {
+  color: green;
+}
+
+.statusTitle {
+  color: #303030;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+    border-radius: 6px;
+    padding: 30px 50px;
+    overflow: auto;
+    height: 540px;
+  }
+}
